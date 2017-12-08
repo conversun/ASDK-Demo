@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932041AD1F45A16F0084C018 /* InfoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 932041AC1F45A16F0084C018 /* InfoCellNode.m */; };
+		938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FCE081FD94AD400BDF8E1 /* Factories.m */; };
 		93E6DC811F41A35D00E3DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC801F41A35D00E3DAF0 /* main.m */; };
 		93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */; };
 		93E6DC871F41A35D00E3DAF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC861F41A35D00E3DAF0 /* ViewController.m */; };
 		93E6DC8A1F41A35D00E3DAF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC881F41A35D00E3DAF0 /* Main.storyboard */; };
 		93E6DC8C1F41A35D00E3DAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */; };
 		93E6DC8F1F41A35E00E3DAF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC8D1F41A35E00E3DAF0 /* LaunchScreen.storyboard */; };
+		93ECA81E1FD5381700A1B20D /* short_video.json in Resources */ = {isa = PBXBuildFile; fileRef = 93ECA81D1FD5381700A1B20D /* short_video.json */; };
+		93ECA8211FD5396200A1B20D /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ECA8201FD5396200A1B20D /* VideoModel.m */; };
+		FA40332EBA9FE573645A6441 /* Pods_ASDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C05DF9885C4D4B378AA5C0 /* Pods_ASDKDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		602294ED963173D1B54547B1 /* Pods-ASDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		62593042D3E2A04ECE7CF128 /* Pods-ASDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		932041AB1F45A16F0084C018 /* InfoCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellNode.h; sourceTree = "<group>"; };
+		932041AC1F45A16F0084C018 /* InfoCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellNode.m; sourceTree = "<group>"; };
+		938FCE071FD94AD400BDF8E1 /* Factories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factories.h; sourceTree = "<group>"; };
+		938FCE081FD94AD400BDF8E1 /* Factories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factories.m; sourceTree = "<group>"; };
 		93E6DC7C1F41A35D00E3DAF0 /* ASDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E6DC801F41A35D00E3DAF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93E6DC821F41A35D00E3DAF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +37,10 @@
 		93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93E6DC8E1F41A35E00E3DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93E6DC901F41A35E00E3DAF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93ECA81D1FD5381700A1B20D /* short_video.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = short_video.json; sourceTree = "<group>"; };
+		93ECA81F1FD5396200A1B20D /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		93ECA8201FD5396200A1B20D /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		C3C05DF9885C4D4B378AA5C0 /* Pods_ASDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +48,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA40332EBA9FE573645A6441 /* Pods_ASDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300D5B3AEF2201B0979E5BA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				602294ED963173D1B54547B1 /* Pods-ASDKDemo.debug.xcconfig */,
+				62593042D3E2A04ECE7CF128 /* Pods-ASDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93DECF661FDA3183006EE13B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				938FCE071FD94AD400BDF8E1 /* Factories.h */,
+				938FCE081FD94AD400BDF8E1 /* Factories.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		93DECF671FDA319B006EE13B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				93E6DC851F41A35D00E3DAF0 /* ViewController.h */,
+				93E6DC861F41A35D00E3DAF0 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		93DECF681FDA31B4006EE13B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				932041AB1F45A16F0084C018 /* InfoCellNode.h */,
+				932041AC1F45A16F0084C018 /* InfoCellNode.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		93DECF691FDA31BD006EE13B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93ECA81F1FD5396200A1B20D /* VideoModel.h */,
+				93ECA8201FD5396200A1B20D /* VideoModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		93E6DC731F41A35D00E3DAF0 = {
 			isa = PBXGroup;
 			children = (
 				93E6DC7E1F41A35D00E3DAF0 /* ASDKDemo */,
+				93E6DC821F41A35D00E3DAF0 /* AppDelegate.h */,
+				93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */,
 				93E6DC7D1F41A35D00E3DAF0 /* Products */,
+				300D5B3AEF2201B0979E5BA3 /* Pods */,
+				AAF1DD6C98ADA37F0A2A5AC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +123,10 @@
 		93E6DC7E1F41A35D00E3DAF0 /* ASDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				93E6DC821F41A35D00E3DAF0 /* AppDelegate.h */,
-				93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */,
-				93E6DC851F41A35D00E3DAF0 /* ViewController.h */,
-				93E6DC861F41A35D00E3DAF0 /* ViewController.m */,
-				93E6DC881F41A35D00E3DAF0 /* Main.storyboard */,
-				93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */,
-				93E6DC8D1F41A35E00E3DAF0 /* LaunchScreen.storyboard */,
-				93E6DC901F41A35E00E3DAF0 /* Info.plist */,
+				93DECF691FDA31BD006EE13B /* Model */,
+				93DECF681FDA31B4006EE13B /* View */,
+				93DECF671FDA319B006EE13B /* Controller */,
+				93DECF661FDA3183006EE13B /* Tools */,
 				93E6DC7F1F41A35D00E3DAF0 /* Supporting Files */,
 			);
 			path = ASDKDemo;
@@ -74,9 +135,22 @@
 		93E6DC7F1F41A35D00E3DAF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93E6DC881F41A35D00E3DAF0 /* Main.storyboard */,
+				93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */,
+				93E6DC8D1F41A35E00E3DAF0 /* LaunchScreen.storyboard */,
+				93E6DC901F41A35E00E3DAF0 /* Info.plist */,
+				93ECA81D1FD5381700A1B20D /* short_video.json */,
 				93E6DC801F41A35D00E3DAF0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAF1DD6C98ADA37F0A2A5AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05DF9885C4D4B378AA5C0 /* Pods_ASDKDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93E6DC931F41A35E00E3DAF0 /* Build configuration list for PBXNativeTarget "ASDKDemo" */;
 			buildPhases = (
+				5AA7065409990F852C3E69F4 /* [CP] Check Pods Manifest.lock */,
 				93E6DC781F41A35D00E3DAF0 /* Sources */,
 				93E6DC791F41A35D00E3DAF0 /* Frameworks */,
 				93E6DC7A1F41A35D00E3DAF0 /* Resources */,
+				92CC664A18C72B93A78EB0A7 /* [CP] Embed Pods Frameworks */,
+				3DE5FC263B41528FE3B6DE8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,12 +182,13 @@
 		93E6DC741F41A35D00E3DAF0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Dee;
 				TargetAttributes = {
 					93E6DC7B1F41A35D00E3DAF0 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 5C5Y74L5UM;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -139,11 +217,78 @@
 			files = (
 				93E6DC8F1F41A35E00E3DAF0 /* LaunchScreen.storyboard in Resources */,
 				93E6DC8C1F41A35D00E3DAF0 /* Assets.xcassets in Resources */,
+				93ECA81E1FD5381700A1B20D /* short_video.json in Resources */,
 				93E6DC8A1F41A35D00E3DAF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DE5FC263B41528FE3B6DE8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AA7065409990F852C3E69F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ASDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92CC664A18C72B93A78EB0A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JPFPSStatus/JPFPSStatus.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JPFPSStatus.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93E6DC781F41A35D00E3DAF0 /* Sources */ = {
@@ -151,8 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				93E6DC871F41A35D00E3DAF0 /* ViewController.m in Sources */,
+				93ECA8211FD5396200A1B20D /* VideoModel.m in Sources */,
 				93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */,
 				93E6DC811F41A35D00E3DAF0 /* main.m in Sources */,
+				938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */,
+				932041AD1F45A16F0084C018 /* InfoCellNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +335,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -195,7 +345,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -235,7 +389,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -243,7 +399,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -270,23 +430,36 @@
 		};
 		93E6DC941F41A35E00E3DAF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 602294ED963173D1B54547B1 /* Pods-ASDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5C5Y74L5UM;
 				INFOPLIST_FILE = ASDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.didee.ASDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.didee.ASDKDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "83bb516e-2fe1-4f6c-b6e6-bda4dfbbe64a";
+				PROVISIONING_PROFILE_SPECIFIER = allNaifeiDev;
 			};
 			name = Debug;
 		};
 		93E6DC951F41A35E00E3DAF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62593042D3E2A04ECE7CF128 /* Pods-ASDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 5C5Y74L5UM;
 				INFOPLIST_FILE = ASDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.didee.ASDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.didee.ASDKDemos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "23515834-7716-498d-9516-5e8f10c28b13";
+				PROVISIONING_PROFILE_SPECIFIER = allNaifeiAd_hoc;
 			};
 			name = Release;
 		};
@@ -309,6 +482,7 @@
 				93E6DC951F41A35E00E3DAF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
