@@ -29,7 +29,7 @@
 
 @end
 
-@interface Videos :NSObject
+@interface VideoModel :NSObject
 @property (nonatomic , assign) NSInteger              update_time;
 @property (nonatomic , assign) NSInteger              user_type;
 @property (nonatomic , assign) NSInteger              checked_time;

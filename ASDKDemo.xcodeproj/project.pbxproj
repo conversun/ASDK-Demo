@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		932041AD1F45A16F0084C018 /* InfoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 932041AC1F45A16F0084C018 /* InfoCellNode.m */; };
+		934D38FC1FF0ABC0002EDBC7 /* userNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D38FB1FF0ABC0002EDBC7 /* userNode.m */; };
+		934D39021FF0AF7A002EDBC7 /* ASTextNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39011FF0AF7A002EDBC7 /* ASTextNode+DE.m */; };
+		934D39081FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */; };
+		934D39141FF0CE4E002EDBC7 /* NSAttributedString+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */; };
 		938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FCE081FD94AD400BDF8E1 /* Factories.m */; };
 		93E6DC811F41A35D00E3DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC801F41A35D00E3DAF0 /* main.m */; };
 		93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */; };
@@ -46,6 +50,15 @@
 		62593042D3E2A04ECE7CF128 /* Pods-ASDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		932041AB1F45A16F0084C018 /* InfoCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellNode.h; sourceTree = "<group>"; };
 		932041AC1F45A16F0084C018 /* InfoCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellNode.m; sourceTree = "<group>"; };
+		934D38FA1FF0ABC0002EDBC7 /* userNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = userNode.h; sourceTree = "<group>"; };
+		934D38FB1FF0ABC0002EDBC7 /* userNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userNode.m; sourceTree = "<group>"; };
+		934D39001FF0AF7A002EDBC7 /* ASTextNode+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASTextNode+DE.h"; sourceTree = "<group>"; };
+		934D39011FF0AF7A002EDBC7 /* ASTextNode+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ASTextNode+DE.m"; sourceTree = "<group>"; };
+		934D39051FF0C7E6002EDBC7 /* ASCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCategory.h; sourceTree = "<group>"; };
+		934D39061FF0C84B002EDBC7 /* ASNetworkImageNode+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASNetworkImageNode+DE.h"; sourceTree = "<group>"; };
+		934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ASNetworkImageNode+DE.m"; sourceTree = "<group>"; };
+		934D39121FF0CE4E002EDBC7 /* NSAttributedString+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DE.h"; sourceTree = "<group>"; };
+		934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DE.m"; sourceTree = "<group>"; };
 		938FCE071FD94AD400BDF8E1 /* Factories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factories.h; sourceTree = "<group>"; };
 		938FCE081FD94AD400BDF8E1 /* Factories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factories.m; sourceTree = "<group>"; };
 		93E6DC7C1F41A35D00E3DAF0 /* ASDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +142,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		934D38FF1FF0AF4A002EDBC7 /* ASCategory */ = {
+			isa = PBXGroup;
+			children = (
+				934D39051FF0C7E6002EDBC7 /* ASCategory.h */,
+				934D39001FF0AF7A002EDBC7 /* ASTextNode+DE.h */,
+				934D39011FF0AF7A002EDBC7 /* ASTextNode+DE.m */,
+				934D39061FF0C84B002EDBC7 /* ASNetworkImageNode+DE.h */,
+				934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */,
+				934D39121FF0CE4E002EDBC7 /* NSAttributedString+DE.h */,
+				934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */,
+			);
+			path = ASCategory;
+			sourceTree = "<group>";
+		};
 		93DECF661FDA3183006EE13B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +170,8 @@
 			children = (
 				932041AB1F45A16F0084C018 /* InfoCellNode.h */,
 				932041AC1F45A16F0084C018 /* InfoCellNode.m */,
+				934D38FA1FF0ABC0002EDBC7 /* userNode.h */,
+				934D38FB1FF0ABC0002EDBC7 /* userNode.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +225,7 @@
 		93FC03491FDA875700D08414 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				934D38FF1FF0AF4A002EDBC7 /* ASCategory */,
 				93FC034A1FDA875700D08414 /* Category */,
 				93FC037D1FDA875700D08414 /* Header */,
 			);
@@ -491,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93E6DC871F41A35D00E3DAF0 /* ViewController.m in Sources */,
+				934D39081FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m in Sources */,
 				93FC03871FDA875700D08414 /* UIView+ViewController.m in Sources */,
 				93FC03861FDA875700D08414 /* UIView+Nib.m in Sources */,
 				93FC038C1FDA875700D08414 /* UIBarButtonItem+Item.m in Sources */,
@@ -508,11 +539,14 @@
 				93FC038B1FDA875700D08414 /* NSURL+Parameters.m in Sources */,
 				93FC03891FDA875700D08414 /* UITabBarController+AddChildVC.m in Sources */,
 				93FC03941FDA875700D08414 /* NSData+Base64.m in Sources */,
+				934D38FC1FF0ABC0002EDBC7 /* userNode.m in Sources */,
 				93FC03911FDA875700D08414 /* NSString+Size.m in Sources */,
 				93FC03921FDA875700D08414 /* NSDate+Compare.m in Sources */,
 				93FC03801FDA875700D08414 /* UIImage+Size.m in Sources */,
+				934D39021FF0AF7A002EDBC7 /* ASTextNode+DE.m in Sources */,
 				93FC03811FDA875700D08414 /* UIImage+Clip.m in Sources */,
 				93FC03821FDA875700D08414 /* UIImage+Snap.m in Sources */,
+				934D39141FF0CE4E002EDBC7 /* NSAttributedString+DE.m in Sources */,
 				93FC03841FDA875700D08414 /* UIImage+Color.m in Sources */,
 				938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */,
 				932041AD1F45A16F0084C018 /* InfoCellNode.m in Sources */,

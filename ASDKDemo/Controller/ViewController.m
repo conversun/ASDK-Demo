@@ -27,7 +27,7 @@
     
     NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"short_video" ofType:@"json"]];
     id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    NSArray *modelArray = [NSArray yy_modelArrayWithClass:[Videos class] json:result[@"data"][@"videos"]];
+    NSArray *modelArray = [NSArray yy_modelArrayWithClass:[VideoModel class] json:result[@"data"][@"videos"]];
     
     self.modelArray = [modelArray mutableCopy];
     
@@ -71,7 +71,7 @@
 }
 
 -(ASCellNodeBlock)tableNode:(ASTableNode *)tableNode nodeBlockForRowAtIndexPath:(NSIndexPath *)indexPath{
-    Videos *model = self.modelArray[indexPath.row];
+    VideoModel *model = self.modelArray[indexPath.row];
     return ^{
         InfoCellNode *infoCellNode = [[InfoCellNode alloc]initWithModel:model];
         return infoCellNode;

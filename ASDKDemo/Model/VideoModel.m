@@ -14,7 +14,7 @@
 @implementation Publish_files
 
 @end
-@implementation Videos
+@implementation VideoModel
 
 @end
 

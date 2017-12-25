@@ -13,6 +13,6 @@
 
 @interface InfoCellNode : ASCellNode
 
--(instancetype)initWithModel:(Videos *)video;
+-(instancetype)initWithModel:(VideoModel *)video;
 
 @end

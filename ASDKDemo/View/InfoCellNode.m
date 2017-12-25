@@ -7,10 +7,11 @@
 //
 
 #import "InfoCellNode.h"
+#import "userNode.h"
 
 @interface InfoCellNode ()
 
-@property(nonatomic, strong) Videos *video;
+@property(nonatomic, strong) VideoModel *video;
 
 @property (strong, nonatomic) ASNetworkImageNode *postImageNode;
 
@@ -20,20 +21,17 @@
 
 @property(nonatomic, strong) ASNetworkImageNode *userImageNode;
 
+@property(nonatomic, strong) userNode *userNode;
+
 @end
 
 @implementation InfoCellNode
 
--(instancetype)initWithModel:(Videos *)video{
+-(instancetype)initWithModel:(VideoModel *)video{
     if (self = [super init]) {
         _video = video;
         
-        _postImageNode = [[ASNetworkImageNode alloc] init];
-        _postImageNode.URL = [NSURL URLWithString:_video.cover];
-        _postImageNode.clipsToBounds = YES;
-        _postImageNode.placeholderFadeDuration = 0.5;
-        _postImageNode.placeholderEnabled = YES;
-        _postImageNode.contentMode = UIViewContentModeScaleAspectFill;
+        _postImageNode = [ASNetworkImageNode createWithURLStr:_video.cover];
         [self addSubnode:_postImageNode];
         
         __weak __typeof(self)weakSelf = self;
@@ -54,35 +52,11 @@
             
         };
         
-        _userImageNode = [[ASNetworkImageNode alloc] init];
-        _userImageNode.URL = [NSURL URLWithString:_video.user_info.avatar];
-        _userImageNode.clipsToBounds = YES;
-        _userImageNode.placeholderFadeDuration = 0.5;
-        _userImageNode.placeholderEnabled = YES;
-        _userImageNode.contentMode = UIViewContentModeScaleAspectFill;
-        [self addSubnode:_userImageNode];
-        
-        _userImageNode.imageModificationBlock = ^UIImage *(UIImage *originalImg){
-            CGSize size = CGSizeMake(weakSelf.userImageNode.calculatedSize.width * [UIScreen mainScreen].scale, weakSelf.userImageNode.calculatedSize.height * [UIScreen mainScreen].scale);
-            UIGraphicsBeginImageContext(size);
-            UIBezierPath *path = [UIBezierPath
-                                  bezierPathWithRoundedRect:CGRectMake(0, 0, size.width, size.height)
-                                  cornerRadius:MIN(size.width,size.height)/2];
-            [path addClip];
-            [originalImg drawInRect:CGRectMake(0, 0, size.width, size.height)];
-            UIImage *refinedImg = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-            
-            return refinedImg;
-            
-        };
-        
-        _titleTextNode = [ASTextNode new];
-        _titleTextNode.attributedText = [NSAttributedString attributedStringForDescription:_video.title];
-        _titleTextNode.placeholderEnabled = YES;
-        _titleTextNode.placeholderFadeDuration = 0.5;
-        _titleTextNode.placeholderColor = [UIColor colorWithWhite:0.777 alpha:1.0];
+        _titleTextNode = [ASTextNode createWithAttr:[NSAttributedString attributedStringForDescription:_video.title]];
         [self addSubnode:_titleTextNode];
+        
+        _userNode = [[userNode alloc]initWithModel:_video.user_info];
+        [self addSubnode:_userNode];
         
     }
     return self;
@@ -96,8 +70,7 @@
     ASOverlayLayoutSpec *nameOverSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:_postImageNode overlay:relativeSpec];
     
     _userImageNode.style.preferredSize = CGSizeMake(25, 25);
-    
-    ASStackLayoutSpec *stackSpec = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:8 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStart children:@[nameOverSpec, _userImageNode]];
+    ASStackLayoutSpec *stackSpec = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:8 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStart children:@[nameOverSpec, _userNode]];
     
     ASInsetLayoutSpec *insetSpec = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(16, 16, 0, 16) child:stackSpec];
     
