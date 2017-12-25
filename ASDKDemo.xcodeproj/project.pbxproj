@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		932041AD1F45A16F0084C018 /* InfoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 932041AC1F45A16F0084C018 /* InfoCellNode.m */; };
-		934D38FC1FF0ABC0002EDBC7 /* userNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D38FB1FF0ABC0002EDBC7 /* userNode.m */; };
 		934D39021FF0AF7A002EDBC7 /* ASTextNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39011FF0AF7A002EDBC7 /* ASTextNode+DE.m */; };
 		934D39081FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */; };
 		934D39141FF0CE4E002EDBC7 /* NSAttributedString+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */; };
+		934D391C1FF0D1C7002EDBC7 /* InfoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */; };
+		934D391D1FF0D1C7002EDBC7 /* UserNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D391B1FF0D1C7002EDBC7 /* UserNode.m */; };
 		938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FCE081FD94AD400BDF8E1 /* Factories.m */; };
 		93E6DC811F41A35D00E3DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC801F41A35D00E3DAF0 /* main.m */; };
 		93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */; };
@@ -48,10 +48,6 @@
 /* Begin PBXFileReference section */
 		602294ED963173D1B54547B1 /* Pods-ASDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		62593042D3E2A04ECE7CF128 /* Pods-ASDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		932041AB1F45A16F0084C018 /* InfoCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellNode.h; sourceTree = "<group>"; };
-		932041AC1F45A16F0084C018 /* InfoCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellNode.m; sourceTree = "<group>"; };
-		934D38FA1FF0ABC0002EDBC7 /* userNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = userNode.h; sourceTree = "<group>"; };
-		934D38FB1FF0ABC0002EDBC7 /* userNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = userNode.m; sourceTree = "<group>"; };
 		934D39001FF0AF7A002EDBC7 /* ASTextNode+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASTextNode+DE.h"; sourceTree = "<group>"; };
 		934D39011FF0AF7A002EDBC7 /* ASTextNode+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ASTextNode+DE.m"; sourceTree = "<group>"; };
 		934D39051FF0C7E6002EDBC7 /* ASCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCategory.h; sourceTree = "<group>"; };
@@ -59,6 +55,10 @@
 		934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ASNetworkImageNode+DE.m"; sourceTree = "<group>"; };
 		934D39121FF0CE4E002EDBC7 /* NSAttributedString+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DE.h"; sourceTree = "<group>"; };
 		934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DE.m"; sourceTree = "<group>"; };
+		934D39181FF0D1C7002EDBC7 /* UserNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNode.h; sourceTree = "<group>"; };
+		934D39191FF0D1C7002EDBC7 /* InfoCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellNode.h; sourceTree = "<group>"; };
+		934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellNode.m; sourceTree = "<group>"; };
+		934D391B1FF0D1C7002EDBC7 /* UserNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNode.m; sourceTree = "<group>"; };
 		938FCE071FD94AD400BDF8E1 /* Factories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factories.h; sourceTree = "<group>"; };
 		938FCE081FD94AD400BDF8E1 /* Factories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factories.m; sourceTree = "<group>"; };
 		93E6DC7C1F41A35D00E3DAF0 /* ASDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +156,17 @@
 			path = ASCategory;
 			sourceTree = "<group>";
 		};
+		934D39171FF0D1C7002EDBC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				934D39191FF0D1C7002EDBC7 /* InfoCellNode.h */,
+				934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */,
+				934D39181FF0D1C7002EDBC7 /* UserNode.h */,
+				934D391B1FF0D1C7002EDBC7 /* UserNode.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		93DECF661FDA3183006EE13B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,17 +174,6 @@
 				938FCE081FD94AD400BDF8E1 /* Factories.m */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		93DECF681FDA31B4006EE13B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				932041AB1F45A16F0084C018 /* InfoCellNode.h */,
-				932041AC1F45A16F0084C018 /* InfoCellNode.m */,
-				934D38FA1FF0ABC0002EDBC7 /* userNode.h */,
-				934D38FB1FF0ABC0002EDBC7 /* userNode.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		93E6DC731F41A35D00E3DAF0 = {
@@ -199,7 +199,7 @@
 		93E6DC7E1F41A35D00E3DAF0 /* ASDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				93DECF681FDA31B4006EE13B /* View */,
+				934D39171FF0D1C7002EDBC7 /* View */,
 				93FC03971FDA877900D08414 /* Controller */,
 				93FC03961FDA876D00D08414 /* Model */,
 				93FC03491FDA875700D08414 /* Foundation */,
@@ -523,6 +523,7 @@
 				93E6DC871F41A35D00E3DAF0 /* ViewController.m in Sources */,
 				934D39081FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m in Sources */,
 				93FC03871FDA875700D08414 /* UIView+ViewController.m in Sources */,
+				934D391D1FF0D1C7002EDBC7 /* UserNode.m in Sources */,
 				93FC03861FDA875700D08414 /* UIView+Nib.m in Sources */,
 				93FC038C1FDA875700D08414 /* UIBarButtonItem+Item.m in Sources */,
 				93FC03931FDA875700D08414 /* NSData+Encrypt.m in Sources */,
@@ -539,7 +540,7 @@
 				93FC038B1FDA875700D08414 /* NSURL+Parameters.m in Sources */,
 				93FC03891FDA875700D08414 /* UITabBarController+AddChildVC.m in Sources */,
 				93FC03941FDA875700D08414 /* NSData+Base64.m in Sources */,
-				934D38FC1FF0ABC0002EDBC7 /* userNode.m in Sources */,
+				934D391C1FF0D1C7002EDBC7 /* InfoCellNode.m in Sources */,
 				93FC03911FDA875700D08414 /* NSString+Size.m in Sources */,
 				93FC03921FDA875700D08414 /* NSDate+Compare.m in Sources */,
 				93FC03801FDA875700D08414 /* UIImage+Size.m in Sources */,
@@ -549,7 +550,6 @@
 				934D39141FF0CE4E002EDBC7 /* NSAttributedString+DE.m in Sources */,
 				93FC03841FDA875700D08414 /* UIImage+Color.m in Sources */,
 				938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */,
-				932041AD1F45A16F0084C018 /* InfoCellNode.m in Sources */,
 				93FC03901FDA875700D08414 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

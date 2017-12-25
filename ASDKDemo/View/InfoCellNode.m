@@ -7,7 +7,7 @@
 //
 
 #import "InfoCellNode.h"
-#import "userNode.h"
+#import "UserNode.h"
 
 @interface InfoCellNode ()
 
@@ -21,7 +21,7 @@
 
 @property(nonatomic, strong) ASNetworkImageNode *userImageNode;
 
-@property(nonatomic, strong) userNode *userNode;
+@property(nonatomic, strong) UserNode *userNode;
 
 @end
 
@@ -55,7 +55,7 @@
         _titleTextNode = [ASTextNode createWithAttr:[NSAttributedString attributedStringForDescription:_video.title]];
         [self addSubnode:_titleTextNode];
         
-        _userNode = [[userNode alloc]initWithModel:_video.user_info];
+        _userNode = [[UserNode alloc]initWithModel:_video.user_info];
         [self addSubnode:_userNode];
         
     }
