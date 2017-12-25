@@ -29,6 +29,7 @@
 
 -(instancetype)initWithModel:(VideoModel *)video{
     if (self = [super init]) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         _video = video;
         
         _postImageNode = [ASNetworkImageNode createWithURLStr:_video.cover];
@@ -70,7 +71,8 @@
     ASOverlayLayoutSpec *nameOverSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:_postImageNode overlay:relativeSpec];
     
     _userImageNode.style.preferredSize = CGSizeMake(25, 25);
-    ASStackLayoutSpec *stackSpec = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:8 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStart children:@[nameOverSpec, _userNode]];
+    
+    ASStackLayoutSpec *stackSpec = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:8 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStretch children:@[nameOverSpec, _userNode]];
     
     ASInsetLayoutSpec *insetSpec = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(16, 16, 0, 16) child:stackSpec];
     

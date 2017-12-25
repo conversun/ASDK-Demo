@@ -12,5 +12,6 @@
 #import "ASTextNode+DE.h"
 #import "ASNetworkImageNode+DE.h"
 #import "NSAttributedString+DE.h"
+#import "ASButtonNode+DE.h"
 
 #endif /* ASCategory_h */

@@ -11,5 +11,6 @@
 @interface ASTextNode (DE)
 
 + (ASTextNode *)createWithAttr:(NSAttributedString *)attr;
++ (ASTextNode *)createWithAttr:(NSAttributedString *)attr LineCount:(NSInteger)lineCount;
 
 @end

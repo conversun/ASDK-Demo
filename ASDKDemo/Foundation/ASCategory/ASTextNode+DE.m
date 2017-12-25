@@ -11,11 +11,17 @@
 @implementation ASTextNode (DE)
 
 + (ASTextNode *)createWithAttr:(NSAttributedString *)attr{
+    return [self createWithAttr:attr LineCount:0];
+    
+}
+
++ (ASTextNode *)createWithAttr:(NSAttributedString *)attr LineCount:(NSInteger)lineCount{
     ASTextNode *textNode = [ASTextNode new];
     textNode.attributedText = attr;
     textNode.placeholderEnabled = YES;
     textNode.placeholderFadeDuration = 0.5;
     textNode.placeholderColor = [UIColor colorWithWhite:0.777 alpha:1.0];
+    textNode.maximumNumberOfLines = lineCount;
     return textNode;
     
 }

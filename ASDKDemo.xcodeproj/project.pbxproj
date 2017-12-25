@@ -11,7 +11,9 @@
 		934D39081FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */; };
 		934D39141FF0CE4E002EDBC7 /* NSAttributedString+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */; };
 		934D391C1FF0D1C7002EDBC7 /* InfoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */; };
-		934D391D1FF0D1C7002EDBC7 /* UserNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D391B1FF0D1C7002EDBC7 /* UserNode.m */; };
+		934D39201FF0D261002EDBC7 /* UserNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D391F1FF0D261002EDBC7 /* UserNode.m */; };
+		934D39231FF0D319002EDBC7 /* ASButtonNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39221FF0D319002EDBC7 /* ASButtonNode+DE.m */; };
+		934D39271FF0DF81002EDBC7 /* NSString+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D39261FF0DF81002EDBC7 /* NSString+DE.m */; };
 		938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FCE081FD94AD400BDF8E1 /* Factories.m */; };
 		93E6DC811F41A35D00E3DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC801F41A35D00E3DAF0 /* main.m */; };
 		93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */; };
@@ -55,10 +57,14 @@
 		934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ASNetworkImageNode+DE.m"; sourceTree = "<group>"; };
 		934D39121FF0CE4E002EDBC7 /* NSAttributedString+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DE.h"; sourceTree = "<group>"; };
 		934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DE.m"; sourceTree = "<group>"; };
-		934D39181FF0D1C7002EDBC7 /* UserNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNode.h; sourceTree = "<group>"; };
 		934D39191FF0D1C7002EDBC7 /* InfoCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellNode.h; sourceTree = "<group>"; };
 		934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellNode.m; sourceTree = "<group>"; };
-		934D391B1FF0D1C7002EDBC7 /* UserNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNode.m; sourceTree = "<group>"; };
+		934D391E1FF0D261002EDBC7 /* UserNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNode.h; sourceTree = "<group>"; };
+		934D391F1FF0D261002EDBC7 /* UserNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNode.m; sourceTree = "<group>"; };
+		934D39211FF0D319002EDBC7 /* ASButtonNode+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASButtonNode+DE.h"; sourceTree = "<group>"; };
+		934D39221FF0D319002EDBC7 /* ASButtonNode+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ASButtonNode+DE.m"; sourceTree = "<group>"; };
+		934D39251FF0DF81002EDBC7 /* NSString+DE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+DE.h"; sourceTree = "<group>"; };
+		934D39261FF0DF81002EDBC7 /* NSString+DE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+DE.m"; sourceTree = "<group>"; };
 		938FCE071FD94AD400BDF8E1 /* Factories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factories.h; sourceTree = "<group>"; };
 		938FCE081FD94AD400BDF8E1 /* Factories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factories.m; sourceTree = "<group>"; };
 		93E6DC7C1F41A35D00E3DAF0 /* ASDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +158,10 @@
 				934D39071FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m */,
 				934D39121FF0CE4E002EDBC7 /* NSAttributedString+DE.h */,
 				934D39131FF0CE4E002EDBC7 /* NSAttributedString+DE.m */,
+				934D39211FF0D319002EDBC7 /* ASButtonNode+DE.h */,
+				934D39221FF0D319002EDBC7 /* ASButtonNode+DE.m */,
+				934D39251FF0DF81002EDBC7 /* NSString+DE.h */,
+				934D39261FF0DF81002EDBC7 /* NSString+DE.m */,
 			);
 			path = ASCategory;
 			sourceTree = "<group>";
@@ -161,8 +171,8 @@
 			children = (
 				934D39191FF0D1C7002EDBC7 /* InfoCellNode.h */,
 				934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */,
-				934D39181FF0D1C7002EDBC7 /* UserNode.h */,
-				934D391B1FF0D1C7002EDBC7 /* UserNode.m */,
+				934D391E1FF0D261002EDBC7 /* UserNode.h */,
+				934D391F1FF0D261002EDBC7 /* UserNode.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -523,7 +533,7 @@
 				93E6DC871F41A35D00E3DAF0 /* ViewController.m in Sources */,
 				934D39081FF0C84B002EDBC7 /* ASNetworkImageNode+DE.m in Sources */,
 				93FC03871FDA875700D08414 /* UIView+ViewController.m in Sources */,
-				934D391D1FF0D1C7002EDBC7 /* UserNode.m in Sources */,
+				934D39201FF0D261002EDBC7 /* UserNode.m in Sources */,
 				93FC03861FDA875700D08414 /* UIView+Nib.m in Sources */,
 				93FC038C1FDA875700D08414 /* UIBarButtonItem+Item.m in Sources */,
 				93FC03931FDA875700D08414 /* NSData+Encrypt.m in Sources */,
@@ -542,6 +552,7 @@
 				93FC03941FDA875700D08414 /* NSData+Base64.m in Sources */,
 				934D391C1FF0D1C7002EDBC7 /* InfoCellNode.m in Sources */,
 				93FC03911FDA875700D08414 /* NSString+Size.m in Sources */,
+				934D39231FF0D319002EDBC7 /* ASButtonNode+DE.m in Sources */,
 				93FC03921FDA875700D08414 /* NSDate+Compare.m in Sources */,
 				93FC03801FDA875700D08414 /* UIImage+Size.m in Sources */,
 				934D39021FF0AF7A002EDBC7 /* ASTextNode+DE.m in Sources */,
@@ -550,6 +561,7 @@
 				934D39141FF0CE4E002EDBC7 /* NSAttributedString+DE.m in Sources */,
 				93FC03841FDA875700D08414 /* UIImage+Color.m in Sources */,
 				938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */,
+				934D39271FF0DF81002EDBC7 /* NSString+DE.m in Sources */,
 				93FC03901FDA875700D08414 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
