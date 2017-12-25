@@ -12,15 +12,10 @@
 @interface InfoCellNode ()
 
 @property(nonatomic, strong) VideoModel *video;
-
 @property (strong, nonatomic) ASNetworkImageNode *postImageNode;
-
 @property (strong, nonatomic) ASTextNode *titleTextNode;
-
 @property (strong, nonatomic) ASTextNode *subTitleTextNode;
-
 @property(nonatomic, strong) ASNetworkImageNode *userImageNode;
-
 @property(nonatomic, strong) UserNode *userNode;
 
 @end
@@ -77,13 +72,6 @@
     ASInsetLayoutSpec *insetSpec = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(16, 16, 0, 16) child:stackSpec];
     
     return insetSpec;
-}
-
--(NSDictionary *)asAttributes{
-    NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
-    style.alignment = NSTextAlignmentRight;
-    
-    return @{NSForegroundColorAttributeName:[[UIColor redColor] colorWithAlphaComponent:0.6],NSFontAttributeName:[UIFont italicSystemFontOfSize:15],NSParagraphStyleAttributeName:style};
 }
 
 @end
