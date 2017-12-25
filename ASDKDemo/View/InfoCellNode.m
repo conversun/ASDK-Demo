@@ -12,11 +12,11 @@
 
 @property(nonatomic, strong) Videos *video;
 
-@property (strong, nonatomic) ASNetworkImageNode *animalImageNode;
+@property (strong, nonatomic) ASNetworkImageNode *postImageNode;
 
-@property (strong, nonatomic) ASTextNode *animalNameTextNode;
+@property (strong, nonatomic) ASTextNode *titleTextNode;
 
-@property (strong, nonatomic) ASTextNode *animalDescriptionTextNode;
+@property (strong, nonatomic) ASTextNode *subTitleTextNode;
 
 @property(nonatomic, strong) ASNetworkImageNode *userImageNode;
 
@@ -28,18 +28,18 @@
     if (self = [super init]) {
         _video = video;
         
-        _animalImageNode = [[ASNetworkImageNode alloc] init];
-        _animalImageNode.URL = [NSURL URLWithString:_video.cover];
-        _animalImageNode.clipsToBounds = YES;
-        _animalImageNode.placeholderFadeDuration = 0.5;
-        _animalImageNode.placeholderEnabled = YES;
-        _animalImageNode.contentMode = UIViewContentModeScaleAspectFill;
-        [self addSubnode:_animalImageNode];
+        _postImageNode = [[ASNetworkImageNode alloc] init];
+        _postImageNode.URL = [NSURL URLWithString:_video.cover];
+        _postImageNode.clipsToBounds = YES;
+        _postImageNode.placeholderFadeDuration = 0.5;
+        _postImageNode.placeholderEnabled = YES;
+        _postImageNode.contentMode = UIViewContentModeScaleAspectFill;
+        [self addSubnode:_postImageNode];
         
         __weak __typeof(self)weakSelf = self;
-        _animalImageNode.imageModificationBlock = ^UIImage *(UIImage *originalImg){
+        _postImageNode.imageModificationBlock = ^UIImage *(UIImage *originalImg){
             
-            CGSize size = CGSizeMake(weakSelf.animalImageNode.calculatedSize.width * [UIScreen mainScreen].scale, weakSelf.animalImageNode.calculatedSize.height * [UIScreen mainScreen].scale);
+            CGSize size = CGSizeMake(weakSelf.postImageNode.calculatedSize.width * [UIScreen mainScreen].scale, weakSelf.postImageNode.calculatedSize.height * [UIScreen mainScreen].scale);
             
             UIGraphicsBeginImageContext(size);
             UIBezierPath *path = [UIBezierPath
@@ -77,19 +77,12 @@
             
         };
         
-        _animalNameTextNode = [ASTextNode new];
-        _animalNameTextNode.attributedText = [NSAttributedString attributedStringForDescription:_video.title];
-        _animalNameTextNode.placeholderEnabled = YES;
-        _animalNameTextNode.placeholderFadeDuration = 0.5;
-        _animalNameTextNode.placeholderColor = [UIColor colorWithWhite:0.777 alpha:1.0];
-        [self addSubnode:_animalNameTextNode];
-        
-        _animalDescriptionTextNode = [ASTextNode new];
-        _animalDescriptionTextNode.attributedText = [NSAttributedString attributedStringForDescription:_video.user_info.username];
-        _animalDescriptionTextNode.placeholderEnabled = YES;
-        _animalDescriptionTextNode.placeholderFadeDuration = 0.5;
-        _animalDescriptionTextNode.placeholderColor = [UIColor colorWithWhite:0.777 alpha:1.0];
-        [self addSubnode:_animalDescriptionTextNode];
+        _titleTextNode = [ASTextNode new];
+        _titleTextNode.attributedText = [NSAttributedString attributedStringForDescription:_video.title];
+        _titleTextNode.placeholderEnabled = YES;
+        _titleTextNode.placeholderFadeDuration = 0.5;
+        _titleTextNode.placeholderColor = [UIColor colorWithWhite:0.777 alpha:1.0];
+        [self addSubnode:_titleTextNode];
         
     }
     return self;
@@ -97,17 +90,12 @@
 
 -(ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize{
     
-    _animalImageNode.style.preferredSize = CGSizeMake(constrainedSize.min.width - 32, ((constrainedSize.min.width - 32)/16) * 9);
-    _animalNameTextNode.textContainerInset = UIEdgeInsetsMake(0, 8, 8, 8);
-    ASRelativeLayoutSpec *relativeSpec = [ASRelativeLayoutSpec relativePositionLayoutSpecWithHorizontalPosition:ASRelativeLayoutSpecPositionStart verticalPosition:ASRelativeLayoutSpecPositionEnd sizingOption:ASRelativeLayoutSpecSizingOptionDefault child:_animalNameTextNode];
-    ASOverlayLayoutSpec *nameOverSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:_animalImageNode overlay:relativeSpec];
+    _postImageNode.style.preferredSize = CGSizeMake(constrainedSize.min.width - 32, ((constrainedSize.min.width - 32)/16) * 9);
+    _titleTextNode.textContainerInset = UIEdgeInsetsMake(8, 8, 8, 8);
+    ASRelativeLayoutSpec *relativeSpec = [ASRelativeLayoutSpec relativePositionLayoutSpecWithHorizontalPosition:ASRelativeLayoutSpecPositionStart verticalPosition:ASRelativeLayoutSpecPositionEnd sizingOption:ASRelativeLayoutSpecSizingOptionDefault child:_titleTextNode];
+    ASOverlayLayoutSpec *nameOverSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:_postImageNode overlay:relativeSpec];
     
     _userImageNode.style.preferredSize = CGSizeMake(25, 25);
-    ASRelativeLayoutSpec *relativeUserSpec = [ASRelativeLayoutSpec relativePositionLayoutSpecWithHorizontalPosition:ASRelativeLayoutSpecPositionStart verticalPosition:ASRelativeLayoutSpecPositionEnd sizingOption:ASRelativeLayoutSpecSizingOptionDefault child:_userImageNode];
-    ASOverlayLayoutSpec *userSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:nameOverSpec overlay:relativeUserSpec];
-    
-    ASCenterLayoutSpec *centerSpec = [ASCenterLayoutSpec centerLayoutSpecWithCenteringOptions:ASCenterLayoutSpecCenteringXY sizingOptions:ASCenterLayoutSpecSizingOptionDefault child:_animalDescriptionTextNode];
-    ASOverlayLayoutSpec *timeSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:userSpec overlay:centerSpec];
     
     ASStackLayoutSpec *stackSpec = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:8 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStart children:@[nameOverSpec, _userImageNode]];
     
