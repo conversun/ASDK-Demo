@@ -9,7 +9,7 @@
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import "VideoModel.h"
 #import "Factories.h"
-#import <QMUIKit/QMUIKit.h>
+#import "UIImage+Color.h"
 
 @interface InfoCellNode : ASCellNode
 

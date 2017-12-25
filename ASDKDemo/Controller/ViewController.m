@@ -33,6 +33,12 @@
     
     self.tableNode = [[ASTableNode alloc]initWithStyle:UITableViewStylePlain];
     self.tableNode.backgroundColor = [UIColor whiteColor];
+//    if (@available(iOS 11.0, *)) {
+//        self.tableNode.view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    } else {
+//
+//    }
+//
     
     [self.view addSubnode:self.tableNode];
     [self addDelegate];
