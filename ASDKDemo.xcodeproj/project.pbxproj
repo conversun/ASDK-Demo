@@ -18,6 +18,11 @@
 		93CD5E4A20219F6100AA8E08 /* ASNetworkImageNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E4120219F6100AA8E08 /* ASNetworkImageNode+DE.m */; };
 		93CD5E4B20219F6100AA8E08 /* ASTextNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E4320219F6100AA8E08 /* ASTextNode+DE.m */; };
 		93CD5E522021AB1400AA8E08 /* MusterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E512021AB1400AA8E08 /* MusterController.m */; };
+		93CD5E632021ACC600AA8E08 /* MusterCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E5A2021ACC600AA8E08 /* MusterCellNode.m */; };
+		93CD5E642021ACC600AA8E08 /* MusterOneNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E5E2021ACC600AA8E08 /* MusterOneNode.m */; };
+		93CD5E652021ACC600AA8E08 /* MusterTopNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E5F2021ACC600AA8E08 /* MusterTopNode.m */; };
+		93CD5E662021ACC600AA8E08 /* MusterTwoNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E602021ACC600AA8E08 /* MusterTwoNode.m */; };
+		93CD5E6C2021B0A500AA8E08 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E6B2021B0A500AA8E08 /* HomeController.m */; };
 		93E6DC811F41A35D00E3DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC801F41A35D00E3DAF0 /* main.m */; };
 		93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */; };
 		93E6DC871F41A35D00E3DAF0 /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC861F41A35D00E3DAF0 /* VideoController.m */; };
@@ -77,6 +82,16 @@
 		93CD5E4C2021A02D00AA8E08 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		93CD5E502021AB1400AA8E08 /* MusterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusterController.h; sourceTree = "<group>"; };
 		93CD5E512021AB1400AA8E08 /* MusterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusterController.m; sourceTree = "<group>"; };
+		93CD5E5A2021ACC600AA8E08 /* MusterCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusterCellNode.m; sourceTree = "<group>"; };
+		93CD5E5B2021ACC600AA8E08 /* MusterCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusterCellNode.h; sourceTree = "<group>"; };
+		93CD5E5C2021ACC600AA8E08 /* MusterTopNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusterTopNode.h; sourceTree = "<group>"; };
+		93CD5E5D2021ACC600AA8E08 /* MusterTwoNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusterTwoNode.h; sourceTree = "<group>"; };
+		93CD5E5E2021ACC600AA8E08 /* MusterOneNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusterOneNode.m; sourceTree = "<group>"; };
+		93CD5E5F2021ACC600AA8E08 /* MusterTopNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusterTopNode.m; sourceTree = "<group>"; };
+		93CD5E602021ACC600AA8E08 /* MusterTwoNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusterTwoNode.m; sourceTree = "<group>"; };
+		93CD5E612021ACC600AA8E08 /* MusterOneNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusterOneNode.h; sourceTree = "<group>"; };
+		93CD5E6A2021B0A500AA8E08 /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		93CD5E6B2021B0A500AA8E08 /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		93E6DC7C1F41A35D00E3DAF0 /* ASDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E6DC801F41A35D00E3DAF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93E6DC821F41A35D00E3DAF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,10 +176,8 @@
 		934D39171FF0D1C7002EDBC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				934D39191FF0D1C7002EDBC7 /* VideoCellNode.h */,
-				934D391A1FF0D1C7002EDBC7 /* VideoCellNode.m */,
-				934D39291FF0F4B9002EDBC7 /* UserNode.h */,
-				934D392A1FF0F4B9002EDBC7 /* UserNode.m */,
+				93CD5E542021ACC600AA8E08 /* Muster */,
+				93CD5E682021AD0000AA8E08 /* Video */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +203,40 @@
 			);
 			name = ASCategory;
 			path = ../Tools/ASCategory;
+			sourceTree = "<group>";
+		};
+		93CD5E542021ACC600AA8E08 /* Muster */ = {
+			isa = PBXGroup;
+			children = (
+				93CD5E592021ACC600AA8E08 /* CellNode */,
+				93CD5E612021ACC600AA8E08 /* MusterOneNode.h */,
+				93CD5E5E2021ACC600AA8E08 /* MusterOneNode.m */,
+				93CD5E5C2021ACC600AA8E08 /* MusterTopNode.h */,
+				93CD5E5F2021ACC600AA8E08 /* MusterTopNode.m */,
+				93CD5E5D2021ACC600AA8E08 /* MusterTwoNode.h */,
+				93CD5E602021ACC600AA8E08 /* MusterTwoNode.m */,
+			);
+			path = Muster;
+			sourceTree = "<group>";
+		};
+		93CD5E592021ACC600AA8E08 /* CellNode */ = {
+			isa = PBXGroup;
+			children = (
+				93CD5E5B2021ACC600AA8E08 /* MusterCellNode.h */,
+				93CD5E5A2021ACC600AA8E08 /* MusterCellNode.m */,
+			);
+			path = CellNode;
+			sourceTree = "<group>";
+		};
+		93CD5E682021AD0000AA8E08 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				934D39191FF0D1C7002EDBC7 /* VideoCellNode.h */,
+				934D391A1FF0D1C7002EDBC7 /* VideoCellNode.m */,
+				934D39291FF0F4B9002EDBC7 /* UserNode.h */,
+				934D392A1FF0F4B9002EDBC7 /* UserNode.m */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		93DECF661FDA3183006EE13B /* Tools */ = {
@@ -396,6 +443,8 @@
 				93E6DC861F41A35D00E3DAF0 /* VideoController.m */,
 				93CD5E502021AB1400AA8E08 /* MusterController.h */,
 				93CD5E512021AB1400AA8E08 /* MusterController.m */,
+				93CD5E6A2021B0A500AA8E08 /* HomeController.h */,
+				93CD5E6B2021B0A500AA8E08 /* HomeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -553,6 +602,7 @@
 				93FC03931FDA875700D08414 /* NSData+Encrypt.m in Sources */,
 				93FC038D1FDA875700D08414 /* NSString+Base64.m in Sources */,
 				93FC03881FDA875700D08414 /* UIView+Frame.m in Sources */,
+				93CD5E662021ACC600AA8E08 /* MusterTwoNode.m in Sources */,
 				93FC038E1FDA875700D08414 /* NSString+Encrypt.m in Sources */,
 				93FC03851FDA875700D08414 /* UIColor+Hex.m in Sources */,
 				93FC038A1FDA875700D08414 /* NSDictionary+Params.m in Sources */,
@@ -561,8 +611,10 @@
 				93CD5E4B20219F6100AA8E08 /* ASTextNode+DE.m in Sources */,
 				93ECA8211FD5396200A1B20D /* VideoModel.m in Sources */,
 				93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */,
+				93CD5E652021ACC600AA8E08 /* MusterTopNode.m in Sources */,
 				93CD5E4620219F6100AA8E08 /* NSString+DE.m in Sources */,
 				93CD5E4520219F6100AA8E08 /* ASTableNode+DE.m in Sources */,
+				93CD5E6C2021B0A500AA8E08 /* HomeController.m in Sources */,
 				93CD5E522021AB1400AA8E08 /* MusterController.m in Sources */,
 				93E6DC811F41A35D00E3DAF0 /* main.m in Sources */,
 				93FC038B1FDA875700D08414 /* NSURL+Parameters.m in Sources */,
@@ -571,6 +623,8 @@
 				93CD5E4820219F6100AA8E08 /* NSAttributedString+DE.m in Sources */,
 				934D391C1FF0D1C7002EDBC7 /* VideoCellNode.m in Sources */,
 				93FC03911FDA875700D08414 /* NSString+Size.m in Sources */,
+				93CD5E632021ACC600AA8E08 /* MusterCellNode.m in Sources */,
+				93CD5E642021ACC600AA8E08 /* MusterOneNode.m in Sources */,
 				93FC03921FDA875700D08414 /* NSDate+Compare.m in Sources */,
 				93FC03801FDA875700D08414 /* UIImage+Size.m in Sources */,
 				93FC03811FDA875700D08414 /* UIImage+Clip.m in Sources */,
