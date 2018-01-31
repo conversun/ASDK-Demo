@@ -14,7 +14,7 @@
     ASNetworkImageNode *imageNode = [[ASNetworkImageNode alloc] init];
     imageNode.URL = [NSURL URLWithString:urlStr];
     imageNode.clipsToBounds = YES;
-    imageNode.placeholderFadeDuration = 0.3;
+    imageNode.placeholderFadeDuration = 0.2;
     imageNode.placeholderEnabled = YES;
     imageNode.contentMode = UIViewContentModeScaleAspectFill;
     return imageNode;

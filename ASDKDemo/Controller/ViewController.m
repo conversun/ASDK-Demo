@@ -82,6 +82,7 @@
 - (ASSizeRange)tableView:(ASTableView *)tableView constrainedSizeForRowAtIndexPath:(NSIndexPath *)indexPath {
     return ASSizeRangeMake(CGSizeMake([UIScreen mainScreen].bounds.size.width, ([UIScreen mainScreen].bounds.size.width/16) * 9),
                            CGSizeMake([UIScreen mainScreen].bounds.size.width, INFINITY));
+    
 }
 
 - (BOOL)shouldBatchFetchForTableView:(ASTableView *)tableView {
@@ -89,40 +90,27 @@
 }
 
 - (void)tableView:(ASTableView *)tableView willBeginBatchFetchWithContext:(ASBatchContext *)context {
-        //1
     [self retrieveNextPageWithCompletion:^(NSArray *animals) {
-            //2
         [self insertNewRowsInTableView:animals];
-        
-            //3
         [context completeBatchFetching:YES];
+        
     }];
 }
 
 
 - (void)retrieveNextPageWithCompletion:(void (^)(NSArray *))block {
     NSArray *moreAnimals = [[NSArray alloc] initWithArray:[self.modelArray subarrayWithRange:NSMakeRange(0, 10)] copyItems:NO];
-    
-        // Important: this block must run on the main thread
     dispatch_async(dispatch_get_main_queue(), ^{
         block(moreAnimals);
+        
     });
 }
 
 - (void)insertNewRowsInTableView:(NSArray *)newAnimals {
-    NSInteger section = 0;
-    NSMutableArray *indexPaths = [NSMutableArray array];
-    
-    NSUInteger newTotalNumberOfPhotos = self.modelArray.count + newAnimals.count;
-    for (NSUInteger row = self.modelArray.count; row < newTotalNumberOfPhotos; row++) {
-        NSIndexPath *path = [NSIndexPath indexPathForRow:row inSection:section];
-        [indexPaths addObject:path];
-    }
-    
+    NSInteger oldCount = self.modelArray.count;
     [self.modelArray addObjectsFromArray:newAnimals];
-    [self.tableNode insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableNode insertRowWithStart:oldCount NewCount:self.modelArray.count];
     
-//    [self.tableNode.view insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
 }
 
 

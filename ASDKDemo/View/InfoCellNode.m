@@ -30,23 +30,7 @@
         _postImageNode = [ASNetworkImageNode createWithURLStr:_video.cover];
         [self addSubnode:_postImageNode];
         
-        __weak __typeof(self)weakSelf = self;
-        _postImageNode.imageModificationBlock = ^UIImage *(UIImage *originalImg){
-            
-            CGSize size = CGSizeMake(weakSelf.postImageNode.calculatedSize.width * [UIScreen mainScreen].scale, weakSelf.postImageNode.calculatedSize.height * [UIScreen mainScreen].scale);
-            
-            UIGraphicsBeginImageContext(size);
-            UIBezierPath *path = [UIBezierPath
-                                  bezierPathWithRoundedRect:CGRectMake(0, 0, size.width, size.height)
-                                  cornerRadius:8 * [UIScreen mainScreen].scale];
-            [path addClip];
-            [originalImg drawInRect:CGRectMake(0, 0, size.width, size.height)];
-            [[UIImage imageWithColor:[UIColor colorWithWhite:0 alpha:0.5]] drawInRect:CGRectMake(0, 0, size.width, size.height)];
-            UIImage *refinedImg = UIGraphicsGetImageFromCurrentImageContext();
-            UIGraphicsEndImageContext();
-            return refinedImg;
-            
-        };
+        _postImageNode.imageModificationBlock = [_postImageNode imageMaskScreenBlock];
         
         _titleTextNode = [ASTextNode createWithAttr:[NSAttributedString attributedStringForDescription:_video.title]];
         [self addSubnode:_titleTextNode];
@@ -60,12 +44,12 @@
 
 -(ASLayoutSpec *)layoutSpecThatFits:(ASSizeRange)constrainedSize{
     
-    _postImageNode.style.preferredSize = CGSizeMake(constrainedSize.min.width - 32, ((constrainedSize.min.width - 32)/16) * 9);
+    ASRatioLayoutSpec *postImageRatioSpec = [ASRatioLayoutSpec ratioLayoutSpecWithRatio:9.0/16.0 child:_postImageNode];
     
     ASInsetLayoutSpec *titleInsetSpec = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(8, 8, 8, 8) child:_titleTextNode];
     
     ASRelativeLayoutSpec *relativeSpec = [ASRelativeLayoutSpec relativePositionLayoutSpecWithHorizontalPosition:ASRelativeLayoutSpecPositionStart verticalPosition:ASRelativeLayoutSpecPositionEnd sizingOption:ASRelativeLayoutSpecSizingOptionDefault child:titleInsetSpec];
-    ASOverlayLayoutSpec *nameOverSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:_postImageNode overlay:relativeSpec];
+    ASOverlayLayoutSpec *nameOverSpec = [ASOverlayLayoutSpec overlayLayoutSpecWithChild:postImageRatioSpec overlay:relativeSpec];
     
     _userImageNode.style.preferredSize = CGSizeMake(25, 25);
     
