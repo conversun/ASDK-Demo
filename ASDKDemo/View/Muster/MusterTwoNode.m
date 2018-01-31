@@ -33,9 +33,9 @@
         _leftImageNode = [ASNetworkImageNode createWithURLStr:@"http://filminfo.nfile.cn/filminfo/raw/c4/94/c494ac35bfa8f0424c9b5e9f1c20343f413727f3.jpg"];
         _leftImageNode.imageModificationBlock = [_leftImageNode imageModBlockWithCorner:8];
         [self addSubnode:_leftImageNode];
-        _leftTitleNode = [ASTextNode createWithAttr:[NSAttributedString createWithText:@"TitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitle" Font:[UIFont systemFontOfSize:14 weight:UIFontWeightBold] Color:[UIColor colorWithHex:999999]] LineCount:2];
+        _leftTitleNode = [ASTextNode createWithAttr:[NSAttributedString createWithText:@"TitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitle" Font:[UIFont systemFontOfSize:14 weight:UIFontWeightBold] Color:[UIColor colorWithHex:999999]] LineCount:1];
         [self addSubnode:_leftTitleNode];
-        _leftSubTitleNode = [ASTextNode createWithAttr:[NSAttributedString createWithText:@"TitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitle" Font:[UIFont systemFontOfSize:12] Color:[UIColor colorWithHex:999999]] LineCount:1];
+        _leftSubTitleNode = [ASTextNode createWithAttr:[NSAttributedString createWithText:@"TitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitleTitle" Font:[UIFont systemFontOfSize:12] Color:[UIColor colorWithHex:999999]] LineCount:2];
         [self addSubnode:_leftSubTitleNode];
         
         if (_count > 1){
