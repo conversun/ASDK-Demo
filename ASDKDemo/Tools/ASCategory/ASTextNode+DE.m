@@ -22,6 +22,7 @@
     textNode.placeholderFadeDuration = 0.5;
     textNode.placeholderColor = [UIColor colorWithWhite:0.777 alpha:1.0];
     textNode.maximumNumberOfLines = lineCount;
+    textNode.truncationMode = NSLineBreakByTruncatingTail;
     return textNode;
     
 }

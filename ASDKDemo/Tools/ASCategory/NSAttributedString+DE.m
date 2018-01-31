@@ -25,16 +25,16 @@
 }
 
 + (NSAttributedString *)createWithText:(NSString *)text Font:(UIFont *)font Color:(UIColor *)color{
-    return [self createWithText:text Font:font TextColor:color Alignmant:NSTextAlignmentLeft];
+    return [self createWithText:text Font:font Color:color Alignmant:NSTextAlignmentLeft];
     
 }
 
-+ (NSAttributedString *)createWithText:(NSString *)text Font:(UIFont *)font TextColor:(UIColor *)textColor Alignmant:(NSTextAlignment)alignment{
++ (NSAttributedString *)createWithText:(NSString *)text Font:(UIFont *)font Color:(UIColor *)color Alignmant:(NSTextAlignment)alignment{
     NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
     style.alignment = alignment;
 //    style.lineSpacing = 6;
     NSDictionary *descriptionAttributes = @{NSFontAttributeName: font,
-                                            NSForegroundColorAttributeName: textColor,
+                                            NSForegroundColorAttributeName: color,
                                             NSParagraphStyleAttributeName:style
                                             };
     return [[NSAttributedString alloc] initWithString:text attributes:descriptionAttributes];

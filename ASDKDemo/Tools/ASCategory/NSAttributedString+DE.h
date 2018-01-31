@@ -13,6 +13,6 @@
 
 + (NSAttributedString *)getAttributedWithText:(NSString *)text Font:(UIFont *)font TextColor:(UIColor *)textColor Alignmant:(NSTextAlignment)alignment;
 + (NSAttributedString *)createWithText:(NSString *)text Font:(UIFont *)font Color:(UIColor *)color;
-+ (NSAttributedString *)createWithText:(NSString *)text Font:(UIFont *)font TextColor:(UIColor *)textColor Alignmant:(NSTextAlignment)alignment;
++ (NSAttributedString *)createWithText:(NSString *)text Font:(UIFont *)font Color:(UIColor *)color Alignmant:(NSTextAlignment)alignment;
 
 @end
