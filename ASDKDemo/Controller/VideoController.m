@@ -6,62 +6,51 @@
 //  Copyright © 2017年 Dee. All rights reserved.
 //
 
-#import "VideoViewController.h"
+#import "VideoController.h"
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import "VideoCellNode.h"
 #import <YYModel/YYModel.h>
 
-@interface VideoViewController ()<ASTableDelegate, ASTableDataSource>
+@interface VideoController ()<ASTableDelegate, ASTableDataSource>
 
 @property(nonatomic, strong) ASTableNode *tableNode;
 @property(nonatomic, strong) NSMutableArray *modelArray;
 
 @end
 
-@implementation VideoViewController
+@implementation VideoController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"short_video" ofType:@"json"]];
-    id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    NSArray *modelArray = [NSArray yy_modelArrayWithClass:[VideoModel class] json:result[@"data"][@"videos"]];
-    
-    self.modelArray = [modelArray mutableCopy];
-    
-    self.tableNode = [[ASTableNode alloc]initWithStyle:UITableViewStylePlain];
-    self.tableNode.backgroundColor = [UIColor whiteColor];
-//    if (@available(iOS 11.0, *)) {
-//        self.tableNode.view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-//    } else {
-//
-//    }
-//
-    
-    [self.view addSubnode:self.tableNode];
-    [self addDelegate];
-    [self addLayout];
+    [self loadData];
+    [self addTableNode];
     
 }
 
 -(void)viewWillLayoutSubviews{
     [super viewWillLayoutSubviews];
-    
     self.tableNode.frame = self.view.bounds;
     
 }
 
-- (void)addDelegate{
-    self.tableNode.delegate = self;
-    self.tableNode.dataSource = self;
+- (void)loadData{
+    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"short_video" ofType:@"json"]];
+    id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
+    NSArray *modelArray = [NSArray yy_modelArrayWithClass:[VideoModel class] json:result[@"data"][@"videos"]];
+    self.modelArray = [modelArray mutableCopy];
     
 }
 
-- (void)addLayout{
-    self.view.backgroundColor = [UIColor grayColor];
+- (void)addTableNode{
+    self.tableNode = [[ASTableNode alloc]initWithStyle:UITableViewStylePlain];
+    self.tableNode.backgroundColor = [UIColor whiteColor];
     self.tableNode.view.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.view addSubnode:self.tableNode];
+    
+    self.tableNode.delegate = self;
+    self.tableNode.dataSource = self;
     
 }
 

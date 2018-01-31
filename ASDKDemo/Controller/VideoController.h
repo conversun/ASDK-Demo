@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VideoViewController : UIViewController
+@interface VideoController : UIViewController
 
 
 @end

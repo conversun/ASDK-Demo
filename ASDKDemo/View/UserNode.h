@@ -8,7 +8,6 @@
 
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import "VideoModel.h"
-#import "ASCategory.h"
 #import "UIColor+Hex.h"
 
 @interface UserNode : ASDisplayNode

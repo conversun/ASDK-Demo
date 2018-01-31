@@ -17,9 +17,10 @@
 		93CD5E4920219F6100AA8E08 /* UIImage+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E4020219F6100AA8E08 /* UIImage+DE.m */; };
 		93CD5E4A20219F6100AA8E08 /* ASNetworkImageNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E4120219F6100AA8E08 /* ASNetworkImageNode+DE.m */; };
 		93CD5E4B20219F6100AA8E08 /* ASTextNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E4320219F6100AA8E08 /* ASTextNode+DE.m */; };
+		93CD5E522021AB1400AA8E08 /* MusterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E512021AB1400AA8E08 /* MusterController.m */; };
 		93E6DC811F41A35D00E3DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC801F41A35D00E3DAF0 /* main.m */; };
 		93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */; };
-		93E6DC871F41A35D00E3DAF0 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC861F41A35D00E3DAF0 /* VideoViewController.m */; };
+		93E6DC871F41A35D00E3DAF0 /* VideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC861F41A35D00E3DAF0 /* VideoController.m */; };
 		93E6DC8A1F41A35D00E3DAF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC881F41A35D00E3DAF0 /* Main.storyboard */; };
 		93E6DC8C1F41A35D00E3DAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */; };
 		93E6DC8F1F41A35E00E3DAF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC8D1F41A35E00E3DAF0 /* LaunchScreen.storyboard */; };
@@ -74,12 +75,14 @@
 		93CD5E4320219F6100AA8E08 /* ASTextNode+DE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASTextNode+DE.m"; sourceTree = "<group>"; };
 		93CD5E4420219F6100AA8E08 /* NSString+DE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DE.h"; sourceTree = "<group>"; };
 		93CD5E4C2021A02D00AA8E08 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		93CD5E502021AB1400AA8E08 /* MusterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusterController.h; sourceTree = "<group>"; };
+		93CD5E512021AB1400AA8E08 /* MusterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusterController.m; sourceTree = "<group>"; };
 		93E6DC7C1F41A35D00E3DAF0 /* ASDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E6DC801F41A35D00E3DAF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93E6DC821F41A35D00E3DAF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93E6DC851F41A35D00E3DAF0 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		93E6DC861F41A35D00E3DAF0 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		93E6DC851F41A35D00E3DAF0 /* VideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoController.h; sourceTree = "<group>"; };
+		93E6DC861F41A35D00E3DAF0 /* VideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoController.m; sourceTree = "<group>"; };
 		93E6DC891F41A35D00E3DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93E6DC8E1F41A35E00E3DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -389,8 +392,10 @@
 		93FC03971FDA877900D08414 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				93E6DC851F41A35D00E3DAF0 /* VideoViewController.h */,
-				93E6DC861F41A35D00E3DAF0 /* VideoViewController.m */,
+				93E6DC851F41A35D00E3DAF0 /* VideoController.h */,
+				93E6DC861F41A35D00E3DAF0 /* VideoController.m */,
+				93CD5E502021AB1400AA8E08 /* MusterController.h */,
+				93CD5E512021AB1400AA8E08 /* MusterController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -541,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93E6DC871F41A35D00E3DAF0 /* VideoViewController.m in Sources */,
+				93E6DC871F41A35D00E3DAF0 /* VideoController.m in Sources */,
 				93FC03871FDA875700D08414 /* UIView+ViewController.m in Sources */,
 				93FC03861FDA875700D08414 /* UIView+Nib.m in Sources */,
 				93FC038C1FDA875700D08414 /* UIBarButtonItem+Item.m in Sources */,
@@ -558,6 +563,7 @@
 				93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */,
 				93CD5E4620219F6100AA8E08 /* NSString+DE.m in Sources */,
 				93CD5E4520219F6100AA8E08 /* ASTableNode+DE.m in Sources */,
+				93CD5E522021AB1400AA8E08 /* MusterController.m in Sources */,
 				93E6DC811F41A35D00E3DAF0 /* main.m in Sources */,
 				93FC038B1FDA875700D08414 /* NSURL+Parameters.m in Sources */,
 				93FC03891FDA875700D08414 /* UITabBarController+AddChildVC.m in Sources */,
