@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		934D391C1FF0D1C7002EDBC7 /* InfoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */; };
+		934D391C1FF0D1C7002EDBC7 /* VideoCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D391A1FF0D1C7002EDBC7 /* VideoCellNode.m */; };
 		934D392B1FF0F4B9002EDBC7 /* UserNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D392A1FF0F4B9002EDBC7 /* UserNode.m */; };
 		938FCE091FD94AD400BDF8E1 /* Factories.m in Sources */ = {isa = PBXBuildFile; fileRef = 938FCE081FD94AD400BDF8E1 /* Factories.m */; };
 		93CD5E4520219F6100AA8E08 /* ASTableNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E3620219F6100AA8E08 /* ASTableNode+DE.m */; };
@@ -19,7 +19,7 @@
 		93CD5E4B20219F6100AA8E08 /* ASTextNode+DE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD5E4320219F6100AA8E08 /* ASTextNode+DE.m */; };
 		93E6DC811F41A35D00E3DAF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC801F41A35D00E3DAF0 /* main.m */; };
 		93E6DC841F41A35D00E3DAF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */; };
-		93E6DC871F41A35D00E3DAF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC861F41A35D00E3DAF0 /* ViewController.m */; };
+		93E6DC871F41A35D00E3DAF0 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E6DC861F41A35D00E3DAF0 /* VideoViewController.m */; };
 		93E6DC8A1F41A35D00E3DAF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC881F41A35D00E3DAF0 /* Main.storyboard */; };
 		93E6DC8C1F41A35D00E3DAF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */; };
 		93E6DC8F1F41A35E00E3DAF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E6DC8D1F41A35E00E3DAF0 /* LaunchScreen.storyboard */; };
@@ -52,8 +52,8 @@
 /* Begin PBXFileReference section */
 		602294ED963173D1B54547B1 /* Pods-ASDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		62593042D3E2A04ECE7CF128 /* Pods-ASDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASDKDemo/Pods-ASDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		934D39191FF0D1C7002EDBC7 /* InfoCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoCellNode.h; sourceTree = "<group>"; };
-		934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoCellNode.m; sourceTree = "<group>"; };
+		934D39191FF0D1C7002EDBC7 /* VideoCellNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCellNode.h; sourceTree = "<group>"; };
+		934D391A1FF0D1C7002EDBC7 /* VideoCellNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCellNode.m; sourceTree = "<group>"; };
 		934D39291FF0F4B9002EDBC7 /* UserNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNode.h; sourceTree = "<group>"; };
 		934D392A1FF0F4B9002EDBC7 /* UserNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNode.m; sourceTree = "<group>"; };
 		938FCE071FD94AD400BDF8E1 /* Factories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factories.h; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		93E6DC801F41A35D00E3DAF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93E6DC821F41A35D00E3DAF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93E6DC831F41A35D00E3DAF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93E6DC851F41A35D00E3DAF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93E6DC861F41A35D00E3DAF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		93E6DC851F41A35D00E3DAF0 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		93E6DC861F41A35D00E3DAF0 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		93E6DC891F41A35D00E3DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93E6DC8B1F41A35D00E3DAF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93E6DC8E1F41A35E00E3DAF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 		934D39171FF0D1C7002EDBC7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				934D39191FF0D1C7002EDBC7 /* InfoCellNode.h */,
-				934D391A1FF0D1C7002EDBC7 /* InfoCellNode.m */,
+				934D39191FF0D1C7002EDBC7 /* VideoCellNode.h */,
+				934D391A1FF0D1C7002EDBC7 /* VideoCellNode.m */,
 				934D39291FF0F4B9002EDBC7 /* UserNode.h */,
 				934D392A1FF0F4B9002EDBC7 /* UserNode.m */,
 			);
@@ -389,8 +389,8 @@
 		93FC03971FDA877900D08414 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				93E6DC851F41A35D00E3DAF0 /* ViewController.h */,
-				93E6DC861F41A35D00E3DAF0 /* ViewController.m */,
+				93E6DC851F41A35D00E3DAF0 /* VideoViewController.h */,
+				93E6DC861F41A35D00E3DAF0 /* VideoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -541,7 +541,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93E6DC871F41A35D00E3DAF0 /* ViewController.m in Sources */,
+				93E6DC871F41A35D00E3DAF0 /* VideoViewController.m in Sources */,
 				93FC03871FDA875700D08414 /* UIView+ViewController.m in Sources */,
 				93FC03861FDA875700D08414 /* UIView+Nib.m in Sources */,
 				93FC038C1FDA875700D08414 /* UIBarButtonItem+Item.m in Sources */,
@@ -563,7 +563,7 @@
 				93FC03891FDA875700D08414 /* UITabBarController+AddChildVC.m in Sources */,
 				93FC03941FDA875700D08414 /* NSData+Base64.m in Sources */,
 				93CD5E4820219F6100AA8E08 /* NSAttributedString+DE.m in Sources */,
-				934D391C1FF0D1C7002EDBC7 /* InfoCellNode.m in Sources */,
+				934D391C1FF0D1C7002EDBC7 /* VideoCellNode.m in Sources */,
 				93FC03911FDA875700D08414 /* NSString+Size.m in Sources */,
 				93FC03921FDA875700D08414 /* NSDate+Compare.m in Sources */,
 				93FC03801FDA875700D08414 /* UIImage+Size.m in Sources */,

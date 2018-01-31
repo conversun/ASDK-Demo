@@ -1,5 +1,5 @@
 //
-//  InfoCellNode.h
+//  VideoCellNode.h
 //  ASDKDemo
 //
 //  Created by Dee on 2017/8/17.
@@ -11,7 +11,7 @@
 #import "Factories.h"
 #import "UIImage+Color.h"
 
-@interface InfoCellNode : ASCellNode
+@interface VideoCellNode : ASCellNode
 
 -(instancetype)initWithModel:(VideoModel *)video;
 

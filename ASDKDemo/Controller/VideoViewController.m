@@ -6,19 +6,19 @@
 //  Copyright © 2017年 Dee. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "VideoViewController.h"
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
-#import "InfoCellNode.h"
+#import "VideoCellNode.h"
 #import <YYModel/YYModel.h>
 
-@interface ViewController ()<ASTableDelegate, ASTableDataSource>
+@interface VideoViewController ()<ASTableDelegate, ASTableDataSource>
 
 @property(nonatomic, strong) ASTableNode *tableNode;
 @property(nonatomic, strong) NSMutableArray *modelArray;
 
 @end
 
-@implementation ViewController
+@implementation VideoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -73,8 +73,8 @@
 -(ASCellNodeBlock)tableNode:(ASTableNode *)tableNode nodeBlockForRowAtIndexPath:(NSIndexPath *)indexPath{
     VideoModel *model = self.modelArray[indexPath.row];
     return ^{
-        InfoCellNode *infoCellNode = [[InfoCellNode alloc]initWithModel:model];
-        return infoCellNode;
+        VideoCellNode *videoCellNode = [[VideoCellNode alloc]initWithModel:model];
+        return videoCellNode;
         
     };
 }

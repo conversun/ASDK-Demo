@@ -1,15 +1,15 @@
 //
-//  InfoCellNode.m
+//  VideoCellNode.m
 //  ASDKDemo
 //
 //  Created by Dee on 2017/8/17.
 //  Copyright © 2017年 Dee. All rights reserved.
 //
 
-#import "InfoCellNode.h"
+#import "VideoCellNode.h"
 #import "UserNode.h"
 
-@interface InfoCellNode ()
+@interface VideoCellNode ()
 
 @property(nonatomic, strong) VideoModel *video;
 @property (strong, nonatomic) ASNetworkImageNode *postImageNode;
@@ -20,7 +20,7 @@
 
 @end
 
-@implementation InfoCellNode
+@implementation VideoCellNode
 
 -(instancetype)initWithModel:(VideoModel *)video{
     if (self = [super init]) {
