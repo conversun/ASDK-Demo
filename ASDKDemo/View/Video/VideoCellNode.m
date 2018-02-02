@@ -55,9 +55,9 @@
     
     ASStackLayoutSpec *videoStackSpec = [ASStackLayoutSpec stackLayoutSpecWithDirection:ASStackLayoutDirectionVertical spacing:8 justifyContent:ASStackLayoutJustifyContentStart alignItems:ASStackLayoutAlignItemsStretch children:@[titleOverlaySpec, _userNode]];
     
-    ASInsetLayoutSpec *insetSpec = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(16, 16, 0, 16) child:videoStackSpec];
+    ASInsetLayoutSpec *videoInsetSpec = [ASInsetLayoutSpec insetLayoutSpecWithInsets:UIEdgeInsetsMake(16, 16, 0, 16) child:videoStackSpec];
     
-    return insetSpec;
+    return videoInsetSpec;
 }
 
 @end
