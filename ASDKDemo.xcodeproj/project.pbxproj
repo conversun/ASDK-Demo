@@ -201,8 +201,7 @@
 				93CD5E4420219F6100AA8E08 /* NSString+DE.h */,
 				93CD5E3B20219F6100AA8E08 /* NSString+DE.m */,
 			);
-			name = ASCategory;
-			path = ../Tools/ASCategory;
+			path = ASCategory;
 			sourceTree = "<group>";
 		};
 		93CD5E542021ACC600AA8E08 /* Muster */ = {
